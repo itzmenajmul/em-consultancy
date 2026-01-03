@@ -119,6 +119,68 @@ body {
   margin-bottom: 40px;
 }
 
+/* OUR SERVICE STYLES */
+.our-service-container {
+  padding: 60px 0px;
+}
+.our-service-container .section-heading {
+  color: #00325d;
+  font-size: 32px;
+  font-weight: 400;
+  border-bottom: 2px solid #00adef;
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.our-service-container .service-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 80px;
+}
+
+.service-card-container .service-card {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.service-card-container h3 {
+  color: #222222;
+  font-size: 29px;
+  text-align: left;
+  padding: 23px;
+}
+.service-card-container p {
+  text-align: justify;
+  padding-right: 30px;
+
+  color: rgba(34, 34, 34, 1);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.service-card-container .card-1 {
+  background-color: rgba(243, 242, 244, 1);
+}
+.service-card-container .card-2 {
+  background-color: rgba(230, 240, 246, 1);
+}
+.service-card-container .card-3 {
+  background-color: rgba(247, 245, 244, 1);
+}
+.service-card-container .card-4 {
+  background-color: rgba(244, 246, 248, 1);
+}
+.service-card-container .card-5 {
+  background-color: rgba(252, 240, 228, 1);
+}
+.service-card-container .card-6 {
+  background-color: rgba(244, 246, 248, 1);
+}
+
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 1260px) {
   /* OUR VISION STYLES */
@@ -133,6 +195,10 @@ body {
 }
 
 @media screen and (max-width: 1172px) {
+  /* OUR SERVICE STYLES */
+  .our-service-container .service-card-container {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 1060px) {
@@ -153,6 +219,11 @@ body {
 @media screen and (max-width: 992px) {
   .right-content-wrapper .content-container li {
     margin-right: 50px;
+  }
+  /* OUR SERVICE STYLES */
+  .our-service-container .service-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
@@ -205,6 +276,15 @@ body {
     display: block;
     text-align: center;
     margin-bottom: 20px;
+  }
+
+  /* OUR SERVICE STYLES */
+  .our-service-container .service-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-card-container h3 {
+    text-align: center;
   }
 }
 
