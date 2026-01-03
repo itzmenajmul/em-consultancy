@@ -1,5 +1,7 @@
 /*ADDED GOOGLE FONT - Tenor Sans  */
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+/* - Michroma - */
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 
 /* UNIVERSAL STYLES */
 * {
@@ -14,6 +16,22 @@ body {
   font-family: "Tenor Sans", sans-serif;
 }
 
+/* COMMON SHARED STYLES */
+.primary-btn {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #00adef;
+  text-decoration: none;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-style: Bold;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+/* NAV BAR STYLES */
 .nav-container {
   display: flex;
   align-items: center;
@@ -45,6 +63,51 @@ body {
   font-weight: 400;
 }
 
+/* HERO SECTION STYLES */
+.hero-wrapper {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 630px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.hero-container .hero-heading {
+  color: rgba(0, 50, 93, 1);
+
+  font-family: "Michroma", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero-container .hero-description {
+  color: rgba(0, 19, 37, 1);
+  font-style: Bold;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.button-wrapper .service-btn {
+}
+
+.button-wrapper .contact-btn {
+  background-color: black;
+}
+
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 1260px) {
 }
@@ -53,6 +116,18 @@ body {
 }
 
 @media screen and (max-width: 1060px) {
+  .hero-container .hero-heading {
+    font-size: 25px;
+  }
+
+  .hero-container .hero-description {
+    font-size: 18px;
+  }
+
+  .primary-btn {
+    width: 120px;
+    padding: 10px 15px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -62,6 +137,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .hero-container .hero-heading {
+    font-size: 20px;
+  }
+
+  .hero-container .hero-description {
+    font-size: 14px;
+  }
+
+  .primary-btn {
+    width: 100px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -72,8 +160,46 @@ body {
   .right-content-wrapper .content-container li a {
     font-size: 18px;
   }
+
+  .hero-container .hero-heading {
+    font-size: 17px;
+  }
+
+  .hero-container .hero-description {
+    font-size: 12px;
+  }
+
+  .primary-btn {
+    width: 80px;
+    padding: 8px 8px;
+    font-size: 10px;
+  }
 }
+
 @media screen and (max-width: 500px) {
+  .hero-wrapper {
+    background-image: none;
+    height: auto;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .hero-heading {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .hero-container .hero-description {
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+  .button-wrapper {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
